@@ -1,0 +1,2 @@
+//informação da ligação
+//struct
