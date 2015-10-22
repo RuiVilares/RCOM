@@ -1,10 +1,18 @@
+#ifndef _APPLICATION_LAYER_H_
+#define _APPLICATION_LAYER_H_
+
 //camada de aplicação
 
 struct applicationLayer {
-int fileDescriptor; /*Descritor correspondente à porta série*/
-int status; /*TRANSMITTER | RECEIVER*/
+	/*serial port file descriptor*/
+	int fileDescriptor; 
+	
+	int status; /* 0 == TRANSMITTER | 1 == RECEIVER*/
 
-int fileSize;
+	int fileSize;
 }
 
 //slide 18, 19, 20
+
+
+#endif
