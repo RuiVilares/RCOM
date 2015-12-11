@@ -1,0 +1,9 @@
+gcc -Wall ftp.c -o ftp
+#The compiler
+CC = gcc
+#All the files that will be compiled
+all: main
+main:
+	$(CC) -Wall ftp.c -o ftp
+clean:
+	rm ftp
